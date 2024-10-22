@@ -1,28 +1,26 @@
 import React from "react";
-import List from "../Lists/List";
-import List2 from "../lists/List2";
+import List from "../lists/List";
 import List3 from "../lists/List3";
+import List2 from "../lists/List2";
 import { Logs, Check } from "lucide-react";
 
-export default function LeasingUpdates() {
+const LeasingUpdates = () => {
   return (
-    <div className="pt-2">
-      <div className="m-5 border border-black w-10/12 flex flex-col flex-wrap bg-[#f5f5f5] ml-0">
-        <div className="w-full border mx-auto flex flex-wrap justify-between">
-          <div className="bg-white lg:w-7/12 w-full border h-[200px] ml-5 mt-2">
+    <div className="p-2 w-full bg-[#f5f5f5] mt-5">
+      <div className="w-[97%] flex flex-col gap-5 mx-auto">
+        <div className="flex justify-between flex-wrap">
+          <div className="lg:w-[68%] w-full bg-white shadow-lg">
             <List />
           </div>
-          <div className="lg:w-[30%] w-full lg:ml-0 ml-5  border mr-5 mt-2 bg-white">
-            <div className="text-black w-full">
-              <List3 />
-            </div>
+          <div className="lg:w-[30%] w-full border text-rsos-blue-dark bg-white shadow-lg lg:mt-0 mt-5 p-1">
+            <List3 />
           </div>
         </div>
-        <div className="w-full border mx-auto flex flex-wrap justify-between">
-          <div className="bg-white lg:w-7/12 w-full border h-[200px] ml-5 mt-2">
+        <div className="flex justify-between flex-wrap">
+          <div className="lg:w-[68%] w-full bg-white shadow-lg">
             <List2 />
           </div>
-          <div className="lg:w-[30%] w-full lg:ml-0 ml-5  border mr-5 mt-2 bg-white">
+          <div className="lg:w-[30%] w-full border text-rsos-blue-dark bg-white shadow-lg lg:mt-0 mt-5 p-1">
             <div className="text-black w-full flex-col p-3">
               <div className="border-b border-gray-200 flex gap-5">
                 <Logs />
@@ -106,29 +104,9 @@ export default function LeasingUpdates() {
             </div>
           </div>
         </div>
-        <div className="w-[96%] flex-col bg-white shadow-lg mt-5 border border-black mx-auto flex flex-wrap justify-between">
-           <div className="flex justify-between border-b border-gray-200 text-[18px] text-gray-800 p-3">
-             <div >
-              <h1>Stats</h1>
-             </div>
-             <div>
-              <h1>Future showing schedule: XX</h1>
-             </div>
-             <div>
-              <h1>Day on Market:98</h1>
-             </div>
-           </div>
-           <div className="w-full border">
-              <div className="flex gap-5">
-                  <div>
-                    
-                  </div>
-                  <div>0</div>
-                  <div>1</div>
-              </div>
-           </div>
-        </div>
       </div>
     </div>
   );
-}
+};
+
+export default LeasingUpdates;
