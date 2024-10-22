@@ -3,6 +3,11 @@ import List from "../lists/List";
 import List3 from "../lists/List3";
 import List2 from "../lists/List2";
 import { Logs, Check } from "lucide-react";
+import { Stats } from "../lists/Stats";
+import { Applications } from "../lists/Applications ";
+import PropertyListing from "../lists/PropertyListing";
+import PropertyDetails from "../lists/PropertyDetails";
+import FeedbackTable from "../lists/FeedbackTable";
 
 const LeasingUpdates = () => {
   return (
@@ -103,6 +108,21 @@ const LeasingUpdates = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div>
+          <Stats/>
+        </div>
+        <div>
+          <Applications/>
+        </div>
+        <div>
+          <PropertyListing/>
+        </div>
+        <div>
+          <PropertyDetails/>
+        </div>
+        <div>
+          <FeedbackTable/>
         </div>
       </div>
     </div>
